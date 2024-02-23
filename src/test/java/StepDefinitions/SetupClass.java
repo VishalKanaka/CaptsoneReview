@@ -82,10 +82,10 @@ public class SetupClass {
 
 	public static boolean getJiraFlagStatus() {
 		if(getJiraFlag().equals("true")) {
-			System.err.println("Jira Flag is Activated. ");
+			System.err.println("Jira Flag is Activated. Jira ticket Will be raised on failure tests.");
 			return true;
 		}else {
-			System.err.println("Jira Flag is Not Activated. ");
+			System.err.println("Jira Flag is Not Activated. Jira ticket will NOT be raised on failure tests.");
 			return false;
 		}
 	}
@@ -108,6 +108,8 @@ public class SetupClass {
 		}
 		if(scn.isFailed()) {
 			failedScenarios.add(scn.getName());
+			driver.quit();
 		}
+		
 	}
 }

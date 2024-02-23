@@ -57,7 +57,7 @@ public class GoogleSearchResults {
 		boolean verifyElementPresent = basePage.verifyElementPresent(Constants.NAME_TEXT_FIELD);
 		System.out.println(verifyElementPresent);
 		System.out.println("hits enter");
-		Assert.assertEquals("Pass","Fail","Comparing Text");
+	//	Assert.assertEquals("Pass","Fail","Comparing Text");
 	}
 
 	@Then("End of the test")
