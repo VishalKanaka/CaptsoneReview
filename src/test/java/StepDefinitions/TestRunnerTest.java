@@ -18,7 +18,7 @@ import utilities.ZipTestResults;
 	plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		
 	)
-public class TestRunner {
+public class TestRunnerTest {
     
 	@BeforeClass
 	public static void start_of_the_suite() {
