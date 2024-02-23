@@ -15,8 +15,8 @@ Feature: Harshitha test Cases
   @tag2
   Scenario: Validate About Us page
     Given browser is open
-    When User is on Home Page
-    And user clicks on About Us in the header
+    When User is on Home page
+    And user clicks on About us in the header
     Then user navigates to About Us page
     And user is at the bottom of the page 
     And user clicks on scroll up mark 
@@ -28,10 +28,10 @@ Feature: Harshitha test Cases
     Given browser is open
     When User is on Home page
     And user clicks on About us in the header 
-    Then User is on About Us Page
+    Then user navigates to About Us page
     And user scrolls to Customer Experience section
     Then validate customer experience content 
-    And Validate user is able to see the image beside the content
+    And validate user is able to see the image beside the content
     Then End of the test
     
   @tag4
@@ -39,10 +39,10 @@ Feature: Harshitha test Cases
     Given browser is open
     When User is on Home page
     And user clicks on About us in the header 
-    Then User is on About Us Page
+    Then user navigates to About Us page
     And user is Viewing Working process section
     Then user should be able to see the related three images
-    And User should be content below the images
+    And User should be able to see content below the images
     Then End of the test
     
   @tag5
@@ -50,7 +50,7 @@ Feature: Harshitha test Cases
     Given browser is open
     When User is on Home page
     And user clicks on About us in the header 
-    Then user is on About us page
+    Then user navigates to About Us page
     And user clicks on Home which is on About us background image
     Then user should navigate to Home page
     Then End of the test

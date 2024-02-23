@@ -63,7 +63,7 @@ public class GoogleSearchResults {
 	@Then("End of the test")
 	public void user_is_navigated_to_search_results_page() {
 		System.out.println("End of the test");
-		
+		driver.quit();
 	}
 	
 }
