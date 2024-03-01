@@ -32,7 +32,7 @@ public class Trail {
         String username = utils.getProperty("Username");
         String password = utils.getProperty("Password");
 
-        String credentials = org.apache.commons.codec.binary.Base64.encodeBase64String((username + ":" + password).getBytes());
+        String credentials = Base64.encodeBase64String((username + ":" + password).getBytes());
 
         given()
             .baseUri(baseUri)
