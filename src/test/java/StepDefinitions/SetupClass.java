@@ -38,7 +38,6 @@ public class SetupClass {
 
 		System.out.println("Setting up the browser");
 		System.setProperty(utils.getProperty("Chrome"), projectPath + utils.selectFromChain("SelectedVersion"));
-
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
