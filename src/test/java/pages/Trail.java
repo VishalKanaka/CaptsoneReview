@@ -1,5 +1,6 @@
 package pages;
 import static io.restassured.RestAssured.given;
+import org.apache.commons.codec.binary.Base64;
 
 import org.openqa.selenium.WebDriver;
 
