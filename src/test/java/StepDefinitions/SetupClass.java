@@ -17,7 +17,7 @@ import utilities.DeleteReports;
 import utilities.TestUtils;
 import utilities.ZipTestResults;
 
-public class SetupClass {
+public class SetupClass { 
 
 	private static WebDriver driver;
 	private static BasePage basePage;

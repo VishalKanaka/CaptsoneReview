@@ -8,9 +8,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
+import org.junit.Assert;
 import StepDefinitions.SetupClass;
 import io.cucumber.java.Scenario;
+import static org.junit.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import StepDefinitions.SetupClass;
+	import io.cucumber.java.en.And;
+	import io.cucumber.java.en.Given;
+	import io.cucumber.java.en.Then;
+	import io.cucumber.java.en.When;
+	import utilities.BasePage;
+	import utilities.Constants;
+	import utilities.TestUtils;
 
 public class BasePage {
 	protected WebDriver driver;
@@ -104,7 +122,7 @@ public class BasePage {
 
 	public void validateElementPresentAssertion(String locator) throws InterruptedException {
 
-		Assert.assertEquals(verifyElementPresent(locator), true, " Element Present");
+		Assert.assertEquals(verifyElementPresent(locator), true); 
 
 	}
 
