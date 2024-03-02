@@ -75,11 +75,7 @@
             <scope>provided</scope> <!-- Lombok only needed at compile time -->
         </dependency>
 	
-  <dependency>
-    <groupId>commons-codec</groupId>
-    <artifactId>commons-codec</artifactId>
-    <version>1.15</version> <!-- Or the version you want to use -->
-</dependency>
+  
 	</dependencies>
 	<build>
         <plugins>
