@@ -67,12 +67,7 @@
 			<version>5.1.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.8.0</version>
-			<scope>test</scope>
-		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
@@ -111,7 +106,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
+                    <includes>
+						<include>**/TestRunnerTest.java</include>
+					</includes>
                 </configuration>
             </plugin>
         </plugins>
